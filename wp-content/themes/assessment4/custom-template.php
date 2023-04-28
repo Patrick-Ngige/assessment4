@@ -18,11 +18,14 @@ Description: A page template
 
     <?php
 
-        endwhile;
+        endwhile;?>
 
-        the_posts_pagination();
+        <?php the_posts_pagination(); ?> &nbsp;
 
-    endif;
+        >> <?php  next_posts_link('older posts'); ?> &nbsp;
+       <?php previous_posts_link('newer posts'); ?>
+
+    <?php endif;
     wp_reset_postdata();
 ?>    
 
