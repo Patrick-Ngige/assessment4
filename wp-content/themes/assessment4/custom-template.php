@@ -8,7 +8,7 @@
  Description: A page template
  */
 ?>
-
+<?php wp_head() ?>
 
 
 <?php 

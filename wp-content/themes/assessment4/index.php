@@ -1,7 +1,8 @@
 <?php 
     get_header();
 ?>
-<div class="body">
+
+<div class="ml-16 bg-red-200">
 <?php  
 
         if(have_posts()):
