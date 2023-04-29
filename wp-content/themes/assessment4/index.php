@@ -6,16 +6,18 @@
 
         if(have_posts()):
             while(have_posts()): the_post(); ?>
+        
+            <?php get_template_part('content','blogs') ?>
             
-            <h2><?php the_title(); ?></h2>
-            <p><?php the_content(); ?></p>
-            
-
             <?php 
-           endwhile;
-        endif;
+           endwhile; ?>
+
+           <?php next_posts_link('next post');?>
+           <?php previous_posts_link('old post');?>
+
+        <?php endif;?>
            
-            ?>
+           
 
 </div>
 <?php 
