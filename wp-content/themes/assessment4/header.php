@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <?php wp_head(); ?>
 </head>
-<body <?php body_class('body') ?>
 
-<?php wp_nav_menu(['theme_location'=>'primary']); ?>
-    
+<body <?php body_class('body') ?>>
+    <?php wp_nav_menu(['theme_location' => 'primary']); ?>
+    <div>
+        <?php get_search_form(); ?>
+    </div>

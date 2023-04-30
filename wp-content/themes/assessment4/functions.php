@@ -16,4 +16,11 @@ function assignment4_script_enqueue(){
     wp_enqueue_style('bootstrapcss');
 }
 add_action('wp_enqueue_scripts', 'assignment4_script_enqueue')
+
+
+//  Converting HTML to HTML5 for Search Form 
+
+// add_theme_support('html5', ['search-form']);
+
+
 ?>
