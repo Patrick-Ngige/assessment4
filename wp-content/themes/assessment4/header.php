@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class('body') ?>
 
-<?php wp_nav_menu(); ?>
+<?php wp_nav_menu(['theme_location'=>'primary']); ?>
     
