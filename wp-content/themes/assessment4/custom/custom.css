@@ -1,6 +1,4 @@
 body{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(48, 48, 53);
-   
+    width: 90vw;
+    display: block;
 }
