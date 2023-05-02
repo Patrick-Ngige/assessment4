@@ -482,7 +482,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		}
 
 		/**
-		 * Update the attributes of a nav item depending on the linkmod classes.
+		 * Update the attributes of a nav item depending on the limkmod classes.
 		 *
 		 * @since 4.0.0
 		 *

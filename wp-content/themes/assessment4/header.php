@@ -14,18 +14,18 @@
     <?php //wp_nav_menu(['theme_location' => 'primary']); ?>
 
     <!-- NAVWALKER -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="http://localhost/assessment4/">Navbar</a>
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'primary',
-            'depth'             => 1,
-            'container'         => 'div',
+            'depth'             => 2,
+            'container'         => 'ul',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'bs-example-navbar-collapse-1',
             'menu_class'        => 'nav navbar-nav',
@@ -37,5 +37,5 @@
 </nav>
 
     <div>
-        <?php get_search_form(); ?>
+        <?php   get_search_form(); ?>
     </div>
